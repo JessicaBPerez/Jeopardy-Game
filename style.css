@@ -1,0 +1,16 @@
+#wholeGame {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.jeopardy {
+    grid-column: 1 / 6;
+    grid-row: 1;
+    background-color: red;
+}
+
+.breakingBad {
+    grid-column: 1 / 1;
+    grid-row: 2 / 1;
+}
