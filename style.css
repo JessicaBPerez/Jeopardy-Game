@@ -1,5 +1,5 @@
 body {
-    height: 62.5rem;
+    height: 80rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -64,8 +64,7 @@ body {
     transform: scale(1.1);
 }
 .bb500backcard {
-    visibility: hidden;
-    width: 65rem;
+    /* width: 65rem;
     height: 35rem;
     background-color: rgb(25, 25, 131);
     font-family: "staatliches";
@@ -79,7 +78,10 @@ body {
     align-items: center;
     visibility: ;
     color: rgb(231, 220, 220);
-    font-family: "quantico";
+    font-family: "quantico";*/
+}
+.hidden {
+    visibility: hidden;
 }
 .bb500,
 .bb500backcard {
@@ -666,6 +668,20 @@ button {
     visibility: ;
 }
 
+/*  bb500 Yellow font AND WHOLE CARD*/
+
+/*.bb500question {
+    color: rgba(226, 223, 31, 0.966);
+    font-size: 2.1rem;
+    margin: 3rem 3rem;
+}
+
+}
+.bb500backcard {
+    visibility: hidden;
+}
+*/
+
 /*  bb200 Yellow font AND WHOLE CARD*/
 .bb200question {
     color: rgba(226, 223, 31, 0.966);
@@ -954,4 +970,24 @@ button {
 }
 .code100backcard {
     visibility: hidden;
+}
+
+/* Player 1 and Player 2 CSS */
+.playerboard {
+    background-color: black;
+    border: 1px solid #295A33;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    width: 175px;
+    color: white;
+}
+.score {
+    background-color: #E3E3E3;
+    border: 1px solid #676767;
+    border-radius: 15px;
+    font-family: 'Ruluko', sans-serif;
+    font-size: 50px;
+    margin: 5px;
+    padding: 25px 0px;
 }
