@@ -14,7 +14,7 @@ body {
     width: 90%;
     height: 80%;
     border-style: solid;
-    background-color: rgb(35, 35, 190);
+    background-color: rgb(25, 25, 131);
 }
 
 
@@ -750,8 +750,28 @@ button {
 .sci500question {
     color: rgba(226, 223, 31, 0.966);
     font-size: 2.1rem;
+    margin: 2rem 1rem;
+}
+.sci500backcard {
+    visibility: hidden;
+}
+
+/*  SCIENCE 400 Yellow font AND WHOLE CARD*/
+.sci400question {
+    color: rgba(226, 223, 31, 0.966);
+    font-size: 2.1rem;
     margin: 3rem 1rem;
 }
-.sci00backcard {
+.sci400backcard {
+    visibility: hidden;
+}
+
+/*  SCIENCE 300 Yellow font AND WHOLE CARD*/
+.sci300question {
+    color: rgba(226, 223, 31, 0.966);
+    font-size: 2.1rem;
+    margin: 3rem 1rem;
+}
+.sci300backcard {
     visibility: ;
 }
