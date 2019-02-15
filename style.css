@@ -41,10 +41,12 @@ body {
     grid-row: 2;
     background-color: rgb(35, 35, 190);
     display: flex;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
     border: black solid;
-    color: gold;
+    color: rgb(231, 220, 220);
+    font-family: "staatliches";
+    font-size: 2.5rem;
 }
 
 .bb500 {
@@ -56,6 +58,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.bb500:hover {
+    transform: scale(1.1);
 }
 
 .bb400 {
@@ -67,6 +75,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.bb400:hover {
+    transform: scale(1.1);
 }
 
 .bb300 {
@@ -78,6 +92,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.bb300:hover {
+    transform: scale(1.1);
 }
 
 .bb200 {
@@ -89,6 +109,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.bb200:hover {
+    transform: scale(1.1);
 }
 
 .bb100 {
@@ -100,6 +126,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.bb100:hover {
+    transform: scale(1.1);
 }
 
 .starWars {
@@ -110,7 +142,9 @@ body {
     justify-content: center;
     align-items: center;
     border: black solid;
-    color: gold;
+    color: rgb(231, 220, 220);
+    font-family: "staatliches";
+    font-size: 2.5rem;
 }
 
 .sw500 {
@@ -122,6 +156,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.sw500:hover {
+    transform: scale(1.1);
 }
 
 .sw400 {
@@ -133,6 +173,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.sw400:hover {
+    transform: scale(1.1);
 }
 
 .sw300 {
@@ -144,6 +190,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.sw300:hover {
+    transform: scale(1.1);
 }
 
 .sw200 {
@@ -155,6 +207,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.sw200:hover {
+    transform: scale(1.1);
 }
 
 .sw100 {
@@ -166,6 +224,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.sw100:hover {
+    transform: scale(1.1);
 }
 
 .science {
@@ -176,7 +240,9 @@ body {
     justify-content: center;
     align-items: center;
     border: black solid;
-    color: gold;
+    color: rgb(231, 220, 220);
+    font-family: "staatliches";
+    font-size: 2.5rem;
 }
 
 .sci500 {
@@ -188,6 +254,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.sci500:hover {
+    transform: scale(1.1);
 }
 
 .sci400 {
@@ -199,6 +271,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.sci400:hover {
+    transform: scale(1.1);
 }
 
 .sci300 {
@@ -210,6 +288,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.sci300:hover {
+    transform: scale(1.1);
 }
 
 .sci200 {
@@ -221,6 +305,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.sci200:hover {
+    transform: scale(1.1);
 }
 
 .sci100 {
@@ -232,6 +322,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.sci100:hover {
+    transform: scale(1.1);
 }
 
 .worldOrigins {
@@ -242,7 +338,9 @@ body {
     justify-content: center;
     align-items: center;
     border: black solid;
-    color: gold;
+    color: rgb(231, 220, 220);
+    font-family: "staatliches";
+    font-size: 2.5rem;
 }
 
 .wo500 {
@@ -254,6 +352,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.wo500:hover {
+    transform: scale(1.1);
 }
 
 .wo400 {
@@ -265,6 +369,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.wo400:hover {
+    transform: scale(1.1);
 }
 
 .wo300 {
@@ -276,10 +386,17 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.wo300:hover {
+    transform: scale(1.1);
 }
 
 .wo200 {
     background-color: rgb(35, 35, 190);
+    /*background: radial-gradient(rgb(35, 35, 190) 50%, black);*/
     grid-column: 4;
     grid-row: 6;
     display: flex;
@@ -287,6 +404,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.wo200:hover {
+    transform: scale(1.1);
 }
 
 .wo100 {
@@ -298,17 +421,25 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.wo100:hover {
+    transform: scale(1.1);
 }
 
 .worldLeaders {
     grid-column: 5;
     grid-row: 2;
     background-color: rgb(35, 35, 190);
+    border: black solid;
+    color: rgb(231, 220, 220);
+    font-family: "staatliches";
+    font-size: 2.5rem;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border: black solid;
-    color: gold;
+    align-content: center;
 }
 
 .wl500 {
@@ -320,6 +451,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.wl500:hover {
+    transform: scale(1.1);
 }
 
 .wl400 {
@@ -331,6 +468,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.wl400:hover {
+    transform: scale(1.1);
 }
 
 .wl300 {
@@ -342,6 +485,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.wl300:hover {
+    transform: scale(1.1);
 }
 
 .wl200 {
@@ -353,6 +502,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.wl200:hover {
+    transform: scale(1.1);
 }
 
 .wl100 {
@@ -364,6 +519,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.wl100:hover {
+    transform: scale(1.1);
 }
 
 .coding {
@@ -374,7 +535,9 @@ body {
     justify-content: center;
     align-items: center;
     border: black solid;
-    color: gold;
+    color: rgb(231, 220, 220);
+    font-family: "staatliches";
+    font-size: 2.5rem;
 }
 
 .code500 {
@@ -386,6 +549,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.code500:hover {
+    transform: scale(1.1);
 }
 
 .code400 {
@@ -397,6 +566,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.code400:hover {
+    transform: scale(1.1);
 }
 
 .code300 {
@@ -408,6 +583,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.code300:hover {
+    transform: scale(1.1);
 }
 
 .code200 {
@@ -419,6 +600,12 @@ body {
     align-items: center;
     border: black solid;
     color: gold;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.code200:hover {
+    transform: scale(1.1);
 }
 
 .code100 {
@@ -430,4 +617,10 @@ body {
     justify-content: center;
     align-items: center;
     border: black solid;
+    font-family: quantico;
+    font-size: 3rem;
+}
+
+.code100:hover {
+    transform: scale(1.1);
 }
