@@ -63,6 +63,21 @@ body {
 .bb500:hover {
     transform: scale(1.1);
 }
+.bb500backcard {
+    width: 60%;
+    height: 40%;
+    background-color: red;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.bb500,
+.bb500backcard {
+    position: inherit;
+    backface-visibility: hidden;
+}
 .bb400 {
     background-color: rgb(35, 35, 190);
     grid-column: 1;

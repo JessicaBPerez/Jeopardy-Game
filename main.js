@@ -1,7 +1,12 @@
 $(document).ready(function() {
     //$("body").css("background", "blue");
     $("#wholeGame").on("click", function() {
-        console.log("hello");
+        $(".bb500").hide();
+
+
+
+
+        //console.log("hello");
     })
 
 
