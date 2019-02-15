@@ -1,3 +1,5 @@
 $(document).ready(function() {
-    //$("body").css("background", "blue");
+    $("body").css("background", "blue");
+
+
 });
