@@ -1,16 +1,433 @@
+body {
+    height: 62.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #wholeGame {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 90%;
+    height: 80%;
+    border-style: solid;
+}
+
+.gameGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 80%;
+    height: 80%;
 }
 
 .jeopardy {
-    grid-column: 1 / 6;
-    grid-row: 1;
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
     background-color: red;
+    height: 8rem;
+    background-image: url("./jeopardy.jpg");
+    background-size: contain;
+    border: black solid;
+    color: gold;
+    /*background-repeat: no-repeat;*/
 }
 
 .breakingBad {
-    grid-column: 1 / 1;
-    grid-row: 2 / 1;
+    grid-column: 1;
+    grid-row: 2;
+    background-color: rgb(35, 35, 190);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.bb500 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.bb400 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 1;
+    grid-row: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.bb300 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 1;
+    grid-row: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.bb200 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 1;
+    grid-row: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.bb100 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 1;
+    grid-row: 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.starWars {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: rgb(35, 35, 190);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.sw500 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 2;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.sw400 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 2;
+    grid-row: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.sw300 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 2;
+    grid-row: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.sw200 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 2;
+    grid-row: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.sw100 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 2;
+    grid-row: 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.science {
+    grid-column: 3;
+    grid-row: 2;
+    background-color: rgb(35, 35, 190);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.sci500 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 3;
+    grid-auto-rows: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.sci400 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 3;
+    grid-auto-rows: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.sci300 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 3;
+    grid-auto-rows: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.sci200 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 3;
+    grid-auto-rows: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.sci100 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 3;
+    grid-auto-rows: 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.worldOrigins {
+    grid-column: 4;
+    grid-row: 2;
+    background-color: rgb(35, 35, 190);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.wo500 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 4;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.wo400 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 4;
+    grid-row: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.wo300 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 4;
+    grid-row: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.wo200 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 4;
+    grid-row: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.wo100 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 4;
+    grid-row: 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.worldLeaders {
+    grid-column: 5;
+    grid-row: 2;
+    background-color: rgb(35, 35, 190);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.wl500 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 5;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.wl400 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 5;
+    grid-row: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.wl300 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 5;
+    grid-row: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.wl200 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 5;
+    grid-row: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.wl100 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 5;
+    grid-row: 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.coding {
+    grid-column: 6;
+    grid-row: 2;
+    background-color: rgb(35, 35, 190);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.code500 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 6;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.code400 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 6;
+    grid-row: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.code300 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 6;
+    grid-row: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.code200 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 6;
+    grid-row: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    color: gold;
+}
+
+.code100 {
+    background-color: rgb(35, 35, 190);
+    grid-column: 6;
+    grid-row: 7;
+    color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
 }
