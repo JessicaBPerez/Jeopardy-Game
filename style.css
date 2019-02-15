@@ -813,5 +813,85 @@ button {
     margin: 4rem 2rem;
 }
 .wo500backcard {
+    visibility: hidden;
+}
+
+/*  WORLD ORIGINS 400 Yellow font AND WHOLE CARD*/
+.wo400question {
+    color: rgba(226, 223, 31, 0.966);
+    font-size: 2.1rem;
+    margin: 4rem 2rem;
+}
+.wo400backcard {
+    visibility: hidden;
+}
+
+/*  WORLD ORIGINS 300 Yellow font AND WHOLE CARD*/
+.wo300question {
+    color: rgba(226, 223, 31, 0.966);
+    font-size: 2.1rem;
+    margin: 4rem 2rem;
+}
+.wo300backcard {
+    visibility: hidden;
+}
+
+/*  WORLD ORIGINS 200 Yellow font AND WHOLE CARD*/
+.wo200question {
+    color: rgba(226, 223, 31, 0.966);
+    font-size: 2.1rem;
+    margin: 2rem 2rem;
+}
+.wo200backcard {
+    visibility: hidden;
+}
+
+/*  WORLD ORIGINS 100 Yellow font AND WHOLE CARD*/
+.wo100question {
+    color: rgba(226, 223, 31, 0.966);
+    font-size: 2.1rem;
+    margin: 2rem 2rem;
+}
+.wo100backcard {
+    visibility: hidden;
+}
+
+/*  WORLD LEADERS 500 Yellow font AND WHOLE CARD*/
+.wl500question {
+    color: rgba(226, 223, 31, 0.966);
+    font-size: 2.1rem;
+    margin: 2rem 2rem;
+}
+.wl500backcard {
+    visibility: hidden;
+}
+
+/*  WORLD LEADERS 400 Yellow font AND WHOLE CARD*/
+.wl400question {
+    color: rgba(226, 223, 31, 0.966);
+    font-size: 2.1rem;
+    margin: 2rem 2rem;
+}
+.wl400backcard {
+    visibility: hidden;
+}
+
+/*  WORLD LEADERS 300 Yellow font AND WHOLE CARD*/
+.wl300question {
+    color: rgba(226, 223, 31, 0.966);
+    font-size: 2.1rem;
+    margin: 2rem 2rem;
+}
+.wl300backcard {
+    visibility: hidden;
+}
+
+/*  WORLD LEADERS 200 Yellow font AND WHOLE CARD*/
+.wl200question {
+    color: rgba(226, 223, 31, 0.966);
+    font-size: 2.1rem;
+    margin: 2rem 2rem;
+}
+.wl200backcard {
     visibility: ;
 }
