@@ -1,11 +1,9 @@
 $(document).ready(function() {
-    //$("body").css("background", "red");
     var scorePlayer1 = 0;
     var scorePlayer2 = 0;
     $(".bb500").on("click", function() {
         $(".bb500").hide();
         $(".bb500backcard").removeClass("hidden");
-
         let value = $(".bb500").text();
 
         $("button").on("click", function() {
@@ -14,28 +12,11 @@ $(document).ready(function() {
             if ($(this).hasClass("A")) {
                 scorePlayer1 += parseInt(value);
                 $("#player1box .scorePlayer1").text(`${scorePlayer1}`);
-                //console.log(scorePlayer1);
             } else {
-                console.log("nothing to see here");
+                scorePlayer1 -= parseInt(value);
+                $("#player1box .scorePlayer1").text(`${scorePlayer1}`);
             }
-
-
-
-
-
-
         })
-
-        /* $(".A").on("click", function() {
-
-             let value = $(".bb500").text();
-
-
-             scorePlayer1 += parseInt(value);
-             $("#player1box .scorePlayer1").text(`${scorePlayer1}`);
-             console.log(scorePlayer1);
-             //$(".bb500").data();
-         })*/
     })
 })
 
