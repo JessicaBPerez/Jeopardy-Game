@@ -3,6 +3,6 @@ $(document).ready(function() {
     var scorePlayer1 = 0;
     var scorePlayer2 = 0;
     $(".bb500").on("click", function() {
-        console.log("hi")
+        $(".bb500").hide();
     })
 })
