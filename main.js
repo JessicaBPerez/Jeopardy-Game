@@ -5,5 +5,8 @@ $(document).ready(function() {
     $(".bb500").on("click", function() {
         $(".bb500").hide();
         $(".bb500backcard").removeClass("hidden");
+        $("button").on("click", function() {
+            $(".bb500backcard").addClass("hidden");
+        })
     })
 })
