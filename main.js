@@ -4,5 +4,6 @@ $(document).ready(function() {
     var scorePlayer2 = 0;
     $(".bb500").on("click", function() {
         $(".bb500").hide();
+        $(".bb500backcard").removeClass("hidden");
     })
 })
