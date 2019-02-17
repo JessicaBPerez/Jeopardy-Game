@@ -636,9 +636,6 @@ button {
 }
 
 /* Breaking Bad 300 Question Cards*/
-.bb300backcard {
-    visibility: hidden;
-}
 .bb300,
 .bb300backcard {
     backface-visibility: hidden;
@@ -683,15 +680,12 @@ button {
 }
 */
 
-/*  bb200 Yellow font AND WHOLE CARD*/
+/*  bb200 Yellow font  */
 .bb200question {
     color: rgba(226, 223, 31, 0.966);
     font-size: 2.1rem;
     margin: 3rem 2rem;
 }
-.bb200backcard {
-    visibility: hidden;
-}
 
 /*  bb100 Yellow font AND WHOLE CARD*/
 .bb100question {
@@ -699,38 +693,19 @@ button {
     font-size: 2.1rem;
     margin: 3rem 2rem;
 }
-.bb100backcard {
-    visibility: hidden;
-}
 
-/*  bb100 Yellow font AND WHOLE CARD*/
-.bb100question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
-    margin: 3rem 2rem;
-}
-.bb100backcard {
-    visibility: hidden;
-}
-
-/*  Star Wars 500 Yellow font AND WHOLE CARD*/
+/*  Star Wars 500 Yellow font  */
 .sw500question {
     color: rgba(226, 223, 31, 0.966);
     font-size: 2.1rem;
     margin: 3rem 1rem;
 }
-.sw500backcard {
-    visibility: hidden;
-}
 
-/*  Star Wars 400 Yellow font AND WHOLE CARD*/
+/*  Star Wars 400 Yellow font  */
 .sw400question {
     color: rgba(226, 223, 31, 0.966);
     font-size: 2.1rem;
     margin: 3rem 2rem;
-}
-.sw400backcard {
-    visibility: hidden;
 }
 
 /*  Star Wars 300 Yellow font AND WHOLE CARD*/
