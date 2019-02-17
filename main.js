@@ -512,6 +512,75 @@ $(document).ready(function() {
                 $(".wo500backcard").addClass("hidden");
                 playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
+                    if ($(this).hasClass("B")) {
+                        scorePlayer1 += parseInt(value);
+                        $("#player1box .scorePlayer1").text(`${scorePlayer1}`);
+                    } else {
+                        scorePlayer1 -= parseInt(value);
+                        $("#player1box .scorePlayer1").text(`${scorePlayer1}`);
+                    }
+                } else {
+                    if ($(this).hasClass("B")) {
+                        scorePlayer2 += parseInt(value);
+                        $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
+                    } else {
+                        scorePlayer2 -= parseInt(value);
+                        $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
+                    }
+                }
+            })
+        })
+
+
+
+
+
+
+        /* World Origins 400 Question Card */
+        $(".wo400").on("click", function() {
+            $(".wo400").hide();
+            $(".wo400backcard").removeClass("hidden");
+            let value = $(".wo400").text();
+
+            //Might need to move value.bb200 into global scale inside only #wholeGame function.
+            $("button").on("click", function() {
+                $(".wo400backcard").addClass("hidden");
+                playerOneTurn = !playerOneTurn;
+                if (playerOneTurn == true) {
+                    if ($(this).hasClass("B")) {
+                        scorePlayer1 += parseInt(value);
+                        $("#player1box .scorePlayer1").text(`${scorePlayer1}`);
+                    } else {
+                        scorePlayer1 -= parseInt(value);
+                        $("#player1box .scorePlayer1").text(`${scorePlayer1}`);
+                    }
+                } else {
+                    if ($(this).hasClass("B")) {
+                        scorePlayer2 += parseInt(value);
+                        $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
+                    } else {
+                        scorePlayer2 -= parseInt(value);
+                        $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
+                    }
+                }
+            })
+        })
+
+
+
+
+
+        /* World Origins 300 Question Card */
+        $(".wo300").on("click", function() {
+            $(".wo300").hide();
+            $(".wo300backcard").removeClass("hidden");
+            let value = $(".wo300").text();
+
+            //Might need to move value.bb200 into global scale inside only #wholeGame function.
+            $("button").on("click", function() {
+                $(".wo300backcard").addClass("hidden");
+                playerOneTurn = !playerOneTurn;
+                if (playerOneTurn == true) {
                     if ($(this).hasClass("C")) {
                         scorePlayer1 += parseInt(value);
                         $("#player1box .scorePlayer1").text(`${scorePlayer1}`);
@@ -530,6 +599,108 @@ $(document).ready(function() {
                 }
             })
         })
+
+
+
+
+        /* World Origins 200 Question Card */
+        $(".wo200").on("click", function() {
+            $(".wo200").hide();
+            $(".wo200backcard").removeClass("hidden");
+            let value = $(".wo200").text();
+
+            //Might need to move value.bb200 into global scale inside only #wholeGame function.
+            $("button").on("click", function() {
+                $(".wo200backcard").addClass("hidden");
+                playerOneTurn = !playerOneTurn;
+                if (playerOneTurn == true) {
+                    if ($(this).hasClass("A")) {
+                        scorePlayer1 += parseInt(value);
+                        $("#player1box .scorePlayer1").text(`${scorePlayer1}`);
+                    } else {
+                        scorePlayer1 -= parseInt(value);
+                        $("#player1box .scorePlayer1").text(`${scorePlayer1}`);
+                    }
+                } else {
+                    if ($(this).hasClass("A")) {
+                        scorePlayer2 += parseInt(value);
+                        $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
+                    } else {
+                        scorePlayer2 -= parseInt(value);
+                        $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
+                    }
+                }
+            })
+        })
+
+
+
+
+
+        /* World Origins 100 Question Card */
+        $(".wo100").on("click", function() {
+            $(".wo100").hide();
+            $(".wo100backcard").removeClass("hidden");
+            let value = $(".wo100").text();
+
+            //Might need to move value.bb200 into global scale inside only #wholeGame function.
+            $("button").on("click", function() {
+                $(".wo100backcard").addClass("hidden");
+                playerOneTurn = !playerOneTurn;
+                if (playerOneTurn == true) {
+                    if ($(this).hasClass("A")) {
+                        scorePlayer1 += parseInt(value);
+                        $("#player1box .scorePlayer1").text(`${scorePlayer1}`);
+                    } else {
+                        scorePlayer1 -= parseInt(value);
+                        $("#player1box .scorePlayer1").text(`${scorePlayer1}`);
+                    }
+                } else {
+                    if ($(this).hasClass("A")) {
+                        scorePlayer2 += parseInt(value);
+                        $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
+                    } else {
+                        scorePlayer2 -= parseInt(value);
+                        $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
+                    }
+                }
+            })
+        })
+
+
+
+
+        /* World Leaders 500 Question Card */
+        $(".wl500").on("click", function() {
+            $(".wl500").hide();
+            $(".wl500backcard").removeClass("hidden");
+            let value = $(".wl500").text();
+
+            //Might need to move value.bb200 into global scale inside only #wholeGame function.
+            $("button").on("click", function() {
+                $(".wl500backcard").addClass("hidden");
+                playerOneTurn = !playerOneTurn;
+                if (playerOneTurn == true) {
+                    if ($(this).hasClass("A")) {
+                        scorePlayer1 += parseInt(value);
+                        $("#player1box .scorePlayer1").text(`${scorePlayer1}`);
+                    } else {
+                        scorePlayer1 -= parseInt(value);
+                        $("#player1box .scorePlayer1").text(`${scorePlayer1}`);
+                    }
+                } else {
+                    if ($(this).hasClass("A")) {
+                        scorePlayer2 += parseInt(value);
+                        $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
+                    } else {
+                        scorePlayer2 -= parseInt(value);
+                        $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
+                    }
+                }
+            })
+        })
+
+
 
 
 

@@ -784,48 +784,33 @@ button {
     font-size: 2.1rem;
     margin: 4rem 2rem;
 }
-.wo400backcard {
-    visibility: hidden;
-}
 
-/*  WORLD ORIGINS 300 Yellow font AND WHOLE CARD*/
+/*  WORLD ORIGINS 300 Yellow font  */
 .wo300question {
     color: rgba(226, 223, 31, 0.966);
     font-size: 2.1rem;
     margin: 4rem 2rem;
 }
-.wo300backcard {
-    visibility: hidden;
-}
 
-/*  WORLD ORIGINS 200 Yellow font AND WHOLE CARD*/
+/*  WORLD ORIGINS 200 Yellow font  */
 .wo200question {
     color: rgba(226, 223, 31, 0.966);
     font-size: 2.1rem;
     margin: 2rem 2rem;
 }
-.wo200backcard {
-    visibility: hidden;
-}
 
-/*  WORLD ORIGINS 100 Yellow font AND WHOLE CARD*/
+/*  WORLD ORIGINS 100 Yellow font  */
 .wo100question {
     color: rgba(226, 223, 31, 0.966);
     font-size: 2.1rem;
     margin: 2rem 2rem;
 }
-.wo100backcard {
-    visibility: hidden;
-}
 
-/*  WORLD LEADERS 500 Yellow font AND WHOLE CARD*/
+/*  WORLD LEADERS 500 Yellow font  */
 .wl500question {
     color: rgba(226, 223, 31, 0.966);
     font-size: 2.1rem;
     margin: 2rem 2rem;
-}
-.wl500backcard {
-    visibility: hidden;
 }
 
 /*  WORLD LEADERS 400 Yellow font AND WHOLE CARD*/
