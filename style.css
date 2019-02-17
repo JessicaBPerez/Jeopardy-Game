@@ -606,7 +606,8 @@ button {
 }
 
 /* Breaking Bad 400 Question Cards*/
-.bb400backcard {
+
+/*.bb400backcard {
     width: 65rem;
     height: 35rem;
     background-color: rgb(25, 25, 131);
@@ -622,8 +623,8 @@ button {
     visibility: ;
     color: rgb(231, 220, 220);
     font-family: "quantico";
-    visibility: hidden;
-}
+    visibility: ;
+}*/
 .bb400,
 .bb400backcard {
     backface-visibility: hidden;
