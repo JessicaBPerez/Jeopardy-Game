@@ -12,7 +12,7 @@ $(document).ready(function() {
             //Might need to move value.bb500 into global scale inside only #wholeGame function.
             $("button").on("click", function() {
                 $(".bb500backcard").addClass("hidden");
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("A")) {
                         scorePlayer1 += parseInt(value);
@@ -47,7 +47,7 @@ $(document).ready(function() {
             //Might need to move value.bb400 into global scale inside only #wholeGame function.
             $("button").on("click", function() {
                 $(".bb400backcard").addClass("hidden");
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("C")) {
                         scorePlayer1 += parseInt(value);
@@ -77,7 +77,7 @@ $(document).ready(function() {
             //Might need to move value.bb400 into global scale inside only #wholeGame function.
             $("button").on("click", function() {
                 $(".bb300backcard").addClass("hidden");
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("C")) {
                         scorePlayer1 += parseInt(value);
@@ -109,7 +109,7 @@ $(document).ready(function() {
             //Might need to move value.bb200 into global scale inside only #wholeGame function.
             $("button").on("click", function() {
                 $(".bb200backcard").addClass("hidden");
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("B")) {
                         scorePlayer1 += parseInt(value);
@@ -142,7 +142,7 @@ $(document).ready(function() {
             //Might need to move value.bb200 into global scale inside only #wholeGame function.
             $("button").on("click", function() {
                 $(".bb100backcard").addClass("hidden");
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("B")) {
                         scorePlayer1 += parseInt(value);

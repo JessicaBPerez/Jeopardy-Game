@@ -9,11 +9,13 @@
     <script src="./main.js" defer></script>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=Audiowide|Bowlby+One+SC|Encode+Sans+Expanded|Goblin+One|Gravitas+One|Monoton|Quantico|Staatliches" rel="stylesheet">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Asset|Bungee+Shade|Fondamento|Limelight|Meddon|Vollkorn+SC" rel="stylesheet">
+    <title>Jessica's Jeopardy Game</title>
 </head>
 
+
 <body>
-    <h1>HI</h1>
+
     <div id="wholeGame">
         <div class="jeopardy"></div>
         <!-- <div class="gameGrid"></div>-->
@@ -23,68 +25,37 @@
         <div class="worldOrigins">WORLD ORIGINS</div>
         <div class="worldLeaders">WORLD LEADERS</div>
         <div class="coding">CODING</div>
-        <div class="bb500">500
-
-
-            <!---This is where the new DIVS start-->
-            <!-- <div class="bb500backcard noHover">
-                <div class="content">
-                    <h3 class="bb500question">This is where the question text will go</h3>
-                    <button class="A">A</button>
-                    <p>
-                        This is where the first answer will go.
-                    </p>
-                    <h3 class="bb500question"></h3>
-                    <button class="B">B</button>
-                    <p>
-
-                    </p>
-                    <h3 class="bb500question"></h3>
-                    <button class="C">C</button>
-                    <p>
-
-                    </p>
-                    <h3 class="bb500question"></h3>
-                    <button class="D">D</button>
-                    <p>
-
-                    </p>
-                </div>
-            </div>-->
-
-            <!-- This is where the new DIVS end -->
-        </div>
-
-        <div class="sw500">500</div>
-        <div class="sci500">500</div>
-        <div class="wo500">500</div>
-        <div class="wl500">500</div>
-        <div class="code500">500</div>
-        <div class="bb400">400</div>
-        <div class="sw400">400</div>
-        <div class="sci400">400</div>
-        <div class="wo400">400</div>
-        <div class="wl400">400</div>
-        <div class="code400">400</div>
-        <div class="bb300">300</div>
-        <div class="sw300">300</div>
-        <div class="sci300">300</div>
-        <div class="wo300">300</div>
-        <div class="wl300">300</div>
-        <div class="code300">300</div>
-        <div class="bb200">200</div>
-        <div class="sw200">200</div>
-        <div class="sci200">200</div>
-        <div class="wo200">200</div>
-        <div class="wl200">200</div>
-        <div class="code200">200</div>
-        <div class="bb100">100</div>
-        <div class="sw100">100</div>
-        <div class="sci100">100</div>
-        <div class="wo100">100</div>
-        <div class="wl100">100</div>
-        <div class="code100">100</div>
-        <div class="blankdiv">blankdiv</div>
+        <div class="bb500 decoration hover">500 </div>
+        <div class="sw500 decoration hover">500</div>
+        <div class="sci500 decoration hover">500</div>
+        <div class="wo500 decoration hover">500</div>
+        <div class="wl500 decoration hover">500</div>
+        <div class="code500 decoration hover">500</div>
+        <div class="bb400 decoration hover">400</div>
+        <div class="sw400 decoration hover">400</div>
+        <div class="sci400 decoration hover">400</div>
+        <div class="wo400 decoration hover">400</div>
+        <div class="wl400 decoration hover">400</div>
+        <div class="code400 decoration hover">400</div>
+        <div class="bb300 decoration hover">300</div>
+        <div class="sw300 decoration hover">300</div>
+        <div class="sci300 decoration hover">300</div>
+        <div class="wo300 decoration hover">300</div>
+        <div class="wl300 decoration hover">300</div>
+        <div class="code300 decoration hover">300</div>
+        <div class="bb200 decoration hover">200</div>
+        <div class="sw200 decoration hover">200</div>
+        <div class="sci200 decoration hover">200</div>
+        <div class="wo200 decoration hover">200</div>
+        <div class="wl200 decoration hover">200</div>
+        <div class="code200 decoration hover">200</div>
+        <div class="bb100 decoration hover">100</div>
+        <div class="sw100 decoration hover">100</div>
+        <div class="sci100 decoration hover">100</div>
+        <div class="wo100 decoration hover">100</div>
+        <div class="wl100 decoration hover">100</div>
+        <div class="code100 decoration hover">100</div>
+        <div class="blankdiv decoration">blankdiv</div>
 
     </div>
     </div>
@@ -884,19 +855,20 @@
             </div>
         </div>
     </div>
+    <div class="bothplayerboxes">
+        <div id="player1box" class="playerboard">
+            <h2>Player 1</h2>
+            <div class="scorePlayer1">0</div>
+            <input class="answer" type="button" value="Answer" />
+            <input class="stealATurn" type="button" value="Steal A Turn" />
+        </div>
 
-    <div id="player1box" class="playerboard">
-        <h2>Player 1</h2>
-        <div class="scorePlayer1">0</div>
-        <input class="answer" type="button" value="Answer" />
-        <input class="stealATurn" type="button" value="Steal A Turn" />
-    </div>
-
-    <div id="player2box" class="playerboard">
-        <h2>Player 2</h2>
-        <div class="scorePlayer2">0</div>
-        <input class="answer" type="button" value="Answer" />
-        <input class="stealATurn" type="button" value="Steal A Turn" />
+        <div id="player2box" class="playerboard">
+            <h2>Player 2</h2>
+            <div class="scorePlayer2">0</div>
+            <input class="answer" type="button" value="Answer" />
+            <input class="stealATurn" type="button" value="Steal A Turn" />
+        </div>
     </div>
 </body>
 
