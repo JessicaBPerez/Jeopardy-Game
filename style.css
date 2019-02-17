@@ -49,13 +49,15 @@ body {
     font-family: "staatliches";
     font-size: 2.5rem;
 }
+
+/*  Master Decoration for all of the Card Numbers  */
 .decoration {
     background-color: rgb(35, 35, 190);
     display: flex;
     justify-content: center;
     align-items: center;
     color: gold;
-    font-family: "staatliches";
+    font-family: "vivandi";
     font-size: 3rem;
     border: black solid;
 }
@@ -64,12 +66,15 @@ body {
 .hover:hover {
     transform: scale(1.1);
 }
-.bb500 {
-    grid-column: 1;
-    grid-row: 3;
+
+/*  Hides All Of the Cards Until Called  */
+.hidden {
+    visibility: hidden;
 }
-.bb500backcard {
-    /* width: 65rem;
+
+/*Master CSS for all the question cards*/
+.card {
+    width: 65rem;
     height: 35rem;
     background-color: rgb(25, 25, 131);
     font-family: "staatliches";
@@ -83,12 +88,20 @@ body {
     align-items: center;
     visibility: ;
     color: rgb(231, 220, 220);
-    font-family: "quantico";*/
+    font-family: "quantico";
+    visibility: ;
 }
 
-/*  Hides All Of the Cards Until Called  */
-.hidden {
-    visibility: hidden;
+/*  The Question Styling for all of the Pop-Up Card Questions  */
+.questionFormat {
+    color: rgba(226, 223, 31, 0.966);
+    font-size: 2.1rem;
+}
+
+/*  Grid Placement for Breaking Bad Cards  */
+.bb500 {
+    grid-column: 1;
+    grid-row: 3;
 }
 .bb400 {
     grid-column: 1;
@@ -118,6 +131,8 @@ body {
     font-family: "staatliches";
     font-size: 2.5rem;
 }
+
+/*  Grid Placement for Star Wars Cards  */
 .sw500 {
     grid-column: 2;
     grid-row: 3;
@@ -150,6 +165,8 @@ body {
     font-family: "staatliches";
     font-size: 2.5rem;
 }
+
+/*  Grid Placement for Science Cards  */
 .sci500 {
     grid-column: 3;
     grid-row: 3;
@@ -182,26 +199,19 @@ body {
     font-family: "staatliches";
     font-size: 2.5rem;
 }
+
+/*  Grid Placement for World Origin Cards  */
 .wo500 {
     grid-column: 4;
     grid-row: 3;
-}
-.wo500:hover {
-    transform: scale(1.1);
 }
 .wo400 {
     grid-column: 4;
     grid-row: 4;
 }
-.wo400:hover {
-    transform: scale(1.1);
-}
 .wo300 {
     grid-column: 4;
     grid-row: 5;
-}
-.wo300:hover {
-    transform: scale(1.1);
 }
 .wo200 {
     /*background: radial-gradient(rgb(35, 35, 190) 50%, black);*/
@@ -209,15 +219,9 @@ body {
     grid-column: 4;
     grid-row: 6;
 }
-.wo200:hover {
-    transform: scale(1.1);
-}
 .wo100 {
     grid-column: 4;
     grid-row: 7;
-}
-.wo100:hover {
-    transform: scale(1.1);
 }
 .worldLeaders {
     grid-column: 5;
@@ -231,41 +235,30 @@ body {
     justify-content: center;
     align-content: center;
 }
+
+/*  Grid Placement for World Leader Cards  */
 .wl500 {
     grid-column: 5;
     grid-row: 3;
-}
-.wl500:hover {
-    transform: scale(1.1);
 }
 .wl400 {
     grid-column: 5;
     grid-row: 4;
 }
-.wl400:hover {
-    transform: scale(1.1);
-}
 .wl300 {
     grid-column: 5;
     grid-row: 5;
-}
-.wl300:hover {
-    transform: scale(1.1);
 }
 .wl200 {
     grid-column: 5;
     grid-row: 6;
 }
-.wl200:hover {
-    transform: scale(1.1);
-}
 .wl100 {
     grid-column: 5;
     grid-row: 7;
 }
-.wl100:hover {
-    transform: scale(1.1);
-}
+
+/*  Grid Dimensions for Code Questions  */
 .coding {
     grid-column: 6;
     grid-row: 2;
@@ -282,40 +275,23 @@ body {
     grid-column: 6;
     grid-row: 3;
 }
-.code500:hover {
-    transform: scale(1.1);
-}
 .code400 {
     grid-column: 6;
     grid-row: 4;
-}
-.code400:hover {
-    transform: scale(1.1);
 }
 .code300 {
     grid-column: 6;
     grid-row: 5;
 }
-.code300:hover {
-    transform: scale(1.1);
-}
 .code200 {
     grid-column: 6;
     grid-row: 6;
-}
-.code200:hover {
-    transform: scale(1.1);
 }
 .code100 {
     grid-column: 6;
     grid-row: 7;
 }
-.code100:hover {
-    transform: scale(1.1);
-}
 .bb500question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 3rem 3rem;
 }
 .blankdiv {
@@ -323,12 +299,16 @@ body {
     grid-row: 8;
     background-color: ;
 }
+
+/*  Dimensions for the Buttons inside of the Pop-Up Questions  */
 .floatButtons {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 20%;
 }
+
+/* Decoration for All of the Buttons  */
 button {
     padding: .7rem;
     border-radius: 8px;
@@ -336,240 +316,163 @@ button {
 
 /* Breaking Bad 400 Question Cards*/
 .bb400question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 3rem 2rem;
 }
 
 /* Breaking Bad 300 Question Cards*/
 .bb300question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 3rem 2rem;
 }
-
-/*Master CSS for all the question cards*/
-.card {
-    width: 65rem;
-    height: 35rem;
-    background-color: rgb(25, 25, 131);
-    font-family: "staatliches";
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    position: absolute;
-    border: solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: ;
-    color: rgb(231, 220, 220);
-    font-family: "quantico";
-    visibility: ;
-}
-
-/*  bb500 Yellow font AND WHOLE CARD*/
-
-/*.bb500question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
-    margin: 3rem 3rem;
-
-/*  bb200 Yellow font  */
 .bb200question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 3rem 2rem;
 }
 
 /*  bb100 Yellow font AND WHOLE CARD*/
 .bb100question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 3rem 2rem;
 }
 
+/*  Master For the Star Wars Pop-Up Questions  */
+
 /*  Star Wars 500 Yellow font  */
 .sw500question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 3rem 1rem;
 }
 
 /*  Star Wars 400 Yellow font  */
 .sw400question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 3rem 2rem;
 }
 
 /*  Star Wars 300 Yellow font  */
 .sw300question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 3rem 1rem;
 }
 
 /*  Star Wars 200 Yellow font  */
 .sw200question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 3rem 1rem;
 }
 
 /*  Star Wars 100 Yellow font  */
 .sw100question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 3rem 1rem;
 }
 
+/*  Master For the Science Pop-Up Questions  */
+
 /*  SCIENCE 500 Yellow font  */
 .sci500question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 2rem 1rem;
 }
 
 /*  SCIENCE 400 Yellow font  */
 .sci400question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
-    margin: 3rem 1rem;
+    margin: 2rem 2rem;
 }
 
 /*  SCIENCE 300 Yellow font  */
 .sci300question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 3rem 1rem;
 }
 
 /*  SCIENCE 200 Yellow font m*/
 .sci200question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 4rem 2rem;
 }
 
 /*  SCIENCE 100 Yellow font  */
 .sci100question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 4rem 2rem;
 }
 
 /*  SCIENCE 100 Yellow font  */
 .sci100question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 4rem 2rem;
 }
+
+/*  Master For the WORLD ORIGINS Pop-Up Questions  */
 
 /*  WORLD ORIGINS 500 Yellow font  */
 .wo500question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 4rem 2rem;
 }
 
 /*  WORLD ORIGINS 400 Yellow font AND WHOLE CARD*/
 .wo400question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 4rem 2rem;
 }
 
 /*  WORLD ORIGINS 300 Yellow font  */
 .wo300question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 4rem 2rem;
 }
 
 /*  WORLD ORIGINS 200 Yellow font  */
 .wo200question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 2rem 2rem;
 }
 
 /*  WORLD ORIGINS 100 Yellow font  */
 .wo100question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 2rem 2rem;
 }
 
+/*  Master For the WORLD LEADERS Pop-Up Questions  */
+
 /*  WORLD LEADERS 500 Yellow font  */
 .wl500question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 2rem 2rem;
 }
 
 /*  WORLD LEADERS 400 Yellow font  */
 .wl400question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 2rem 2rem;
 }
 
 /*  WORLD LEADERS 300 Yellow font  */
 .wl300question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 2rem 2rem;
 }
 
 /*  WORLD LEADERS 200 Yellow font  */
 .wl200question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 2rem 2rem;
 }
 
 /*  WORLD LEADERS 100 Yellow font  */
 .wl100question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 3rem 2rem;
 }
 
+/*  Master For the CODING Pop-Up Questions  */
+
 /*  CODE 500 Yellow font  */
 .code500question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 3rem 2rem;
 }
 
 /*  CODE 400 Yellow font  */
 .code400question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 3rem 2rem;
 }
 
 /*  CODE 300 Yellow font  */
 .code300question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 4rem 5rem;
 }
 
 /*  CODE 200 Yellow font  */
 .code200question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 2rem 3rem;
 }
 
 /*  CODE 100 Yellow font  */
 .code100question {
-    color: rgba(226, 223, 31, 0.966);
-    font-size: 2.1rem;
     margin: 4rem 2rem;
 }
+
+/*  Master For the PLAYER 1 AND PLAYER 2 Pop-Up Questions  */
 
 /* Player 1 and Player 2 CSS */
 .playerboard {
@@ -582,16 +485,6 @@ button {
     color: white;
     display: inline-block;
 }
-
-/*.score {
-    background-color: #E3E3E3;
-    border: 1px solid #676767;
-    border-radius: 15px;
-    font-family: 'Ruluko', sans-serif;
-    font-size: 50px;
-    margin: 5px;
-    padding: 25px 0px;
-}*/
 .scorePlayer1 {
     background-color: #E3E3E3;
     border: 1px solid #676767;
