@@ -249,7 +249,7 @@ body {
 .sci500 {
     background-color: rgb(35, 35, 190);
     grid-column: 3;
-    grid-auto-rows: 3;
+    grid-row: 3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,7 +264,7 @@ body {
 .sci400 {
     background-color: rgb(35, 35, 190);
     grid-column: 3;
-    grid-auto-rows: 4;
+    grid-row: 4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -279,7 +279,7 @@ body {
 .sci300 {
     background-color: rgb(35, 35, 190);
     grid-column: 3;
-    grid-auto-rows: 5;
+    grid-row: 5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -294,7 +294,7 @@ body {
 .sci200 {
     background-color: rgb(35, 35, 190);
     grid-column: 3;
-    grid-auto-rows: 6;
+    grid-row: 6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -309,7 +309,7 @@ body {
 .sci100 {
     background-color: rgb(35, 35, 190);
     grid-column: 3;
-    grid-auto-rows: 7;
+    grid-row: 7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -708,104 +708,74 @@ button {
     margin: 3rem 2rem;
 }
 
-/*  Star Wars 300 Yellow font AND WHOLE CARD*/
+/*  Star Wars 300 Yellow font  */
 .sw300question {
     color: rgba(226, 223, 31, 0.966);
     font-size: 2.1rem;
     margin: 3rem 1rem;
 }
-.sw300backcard {
-    visibility: hidden;
-}
 
-/*  Star Wars 200 Yellow font AND WHOLE CARD*/
+/*  Star Wars 200 Yellow font  */
 .sw200question {
     color: rgba(226, 223, 31, 0.966);
     font-size: 2.1rem;
     margin: 3rem 1rem;
 }
-.sw200backcard {
-    visibility: hidden;
-}
 
-/*  Star Wars 100 Yellow font AND WHOLE CARD*/
+/*  Star Wars 100 Yellow font  */
 .sw100question {
     color: rgba(226, 223, 31, 0.966);
     font-size: 2.1rem;
     margin: 3rem 1rem;
 }
-.sw100backcard {
-    visibility: hidden;
-}
 
-/*  SCIENCE 500 Yellow font AND WHOLE CARD*/
+/*  SCIENCE 500 Yellow font  */
 .sci500question {
     color: rgba(226, 223, 31, 0.966);
     font-size: 2.1rem;
     margin: 2rem 1rem;
 }
-.sci500backcard {
-    visibility: hidden;
-}
 
-/*  SCIENCE 400 Yellow font AND WHOLE CARD*/
+/*  SCIENCE 400 Yellow font  */
 .sci400question {
     color: rgba(226, 223, 31, 0.966);
     font-size: 2.1rem;
     margin: 3rem 1rem;
 }
-.sci400backcard {
-    visibility: hidden;
-}
 
-/*  SCIENCE 300 Yellow font AND WHOLE CARD*/
+/*  SCIENCE 300 Yellow font  */
 .sci300question {
     color: rgba(226, 223, 31, 0.966);
     font-size: 2.1rem;
     margin: 3rem 1rem;
 }
-.sci300backcard {
-    visibility: hidden;
-}
 
-/*  SCIENCE 200 Yellow font AND WHOLE CARD*/
+/*  SCIENCE 200 Yellow font m*/
 .sci200question {
     color: rgba(226, 223, 31, 0.966);
     font-size: 2.1rem;
     margin: 4rem 2rem;
 }
-.sci200backcard {
-    visibility: hidden;
-}
 
-/*  SCIENCE 100 Yellow font AND WHOLE CARD*/
+/*  SCIENCE 100 Yellow font  */
 .sci100question {
     color: rgba(226, 223, 31, 0.966);
     font-size: 2.1rem;
     margin: 4rem 2rem;
 }
-.sci100backcard {
-    visibility: hidden;
-}
 
-/*  SCIENCE 100 Yellow font AND WHOLE CARD*/
+/*  SCIENCE 100 Yellow font  */
 .sci100question {
     color: rgba(226, 223, 31, 0.966);
     font-size: 2.1rem;
     margin: 4rem 2rem;
 }
-.sci100backcard {
-    visibility: hidden;
-}
 
-/*  WORLD ORIGINS 500 Yellow font AND WHOLE CARD*/
+/*  WORLD ORIGINS 500 Yellow font  */
 .wo500question {
     color: rgba(226, 223, 31, 0.966);
     font-size: 2.1rem;
     margin: 4rem 2rem;
-}
-.wo500backcard {
-    visibility: hidden;
 }
 
 /*  WORLD ORIGINS 400 Yellow font AND WHOLE CARD*/
