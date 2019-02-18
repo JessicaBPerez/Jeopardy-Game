@@ -16,7 +16,7 @@ audio {
 header {
     font-family: gyraparody;
     font-size: 12rem;
-    color: rgb(241, 240, 234);
+    color: rgb(247, 246, 242);
     position: relative;
     margin-top: 4.5rem;
     text-shadow: 7px 7px black;
@@ -30,7 +30,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    background: linear-gradient(141deg, rgb(25, 25, 131) 10%, #9524b8 56%, rgb(241, 240, 234) 90%);
+    background: linear-gradient(190deg, rgb(25, 25, 131) 10%, #9524b8 56%, rgb(241, 240, 234) 90%);
 }
 
 
@@ -80,7 +80,7 @@ body {
     justify-content: center;
     align-items: center;
     border: black solid;
-    color: rgb(231, 220, 220);
+    color: rgb(247, 246, 242);
     text-shadow: 4px 4px black;
     font-family: "staatliches";
     font-size: 2.5rem;
@@ -528,7 +528,7 @@ button {
     margin: 10px;
     padding: 10px;
     width: 175px;
-    color: rgb(241, 240, 234);
+    color: rgb(247, 246, 242);
     display: inline-block;
     height: 200px;
     text-shadow: 4px 4px black;
