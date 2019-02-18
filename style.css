@@ -3,13 +3,22 @@
     src: url(./gyparody.ttf);
 }
 
+
+/*  Jeopardy Music  */
+
+audio {
+    display: none;
+}
+
+
+/*  Jessica Header  */
+
 header {
     font-family: gyraparody;
-    font-size: 15rem;
-    margin-top: -20rem;
+    font-size: 12rem;
     color: rgb(241, 240, 234);
     position: relative;
-    margin-top: 6rem;
+    margin-top: 4.5rem;
     text-shadow: 7px 7px black;
 }
 
@@ -21,7 +30,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    background: linear-gradient(141deg, #26148b 10%, #9524b8 51%, #d31d36 85%);
+    background: linear-gradient(141deg, #26148b 10%, #9524b8 56%, rgb(241, 240, 234) 85%);
 }
 
 
@@ -31,8 +40,8 @@ body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    width: 90%;
-    height: 50rem;
+    width: 80%;
+    height: 43rem;
     border-style: solid;
     background-color: rgb(25, 25, 131);
     position: absolute;
@@ -121,7 +130,7 @@ body {
     color: rgb(255, 221, 27);
     text-shadow: 4px 4px black;
     font-family: "gravitas one";
-    font-size: 3rem;
+    font-size: 2.2rem;
     border: black solid;
     /*border-radius: 20px;*/
     /*background: radial-gradient(rgb(35, 35, 190) 50%, rgb(180, 26, 167));*/
@@ -364,6 +373,8 @@ button {
     grid-column: 1 / 7;
     grid-row: 8;
     background-color: ;
+    background-image: url("./jeopardy.jpg");
+    background-size: contain;
 }
 
 
@@ -513,18 +524,20 @@ button {
 .playerboard {
     background-color: rgb(25, 25, 131);
     border: 6px solid black;
-    border-radius: 30px;
+    border-radius: 20px;
     margin: 10px;
     padding: 10px;
     width: 175px;
-    color: white;
+    color: rgb(241, 240, 234);
     display: inline-block;
+    height: 200px;
+    text-shadow: 4px 4px black;
 }
 
 .scorePlayer1 {
     background-color: rgb(80, 80, 184);
     border: 1px solid #676767;
-    border-radius: 15px;
+    border-radius: 7px;
     font-family: 'Ruluko', sans-serif;
     font-size: 50px;
     margin: 5px;
@@ -535,7 +548,7 @@ button {
 .scorePlayer2 {
     background-color: rgb(80, 80, 184);
     border: 1px solid #676767;
-    border-radius: 15px;
+    border-radius: 7px;
     font-family: 'Ruluko', sans-serif;
     font-size: 50px;
     margin: 5px;
@@ -544,6 +557,6 @@ button {
 }
 
 #player1box {
-    margin-top: 55rem;
+    margin-top: 45rem;
     position: relative;
 }
