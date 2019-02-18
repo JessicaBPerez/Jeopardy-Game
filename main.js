@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+    //Players Input Their Names
     var playerOneName = prompt("Enter Player One's Name");
     if (playerOneName != null) {
         document.getElementById("player1Name").innerHTML =
