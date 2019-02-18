@@ -101,9 +101,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(255, 217, 0);
+    color: rgb(255, 221, 27);
     text-shadow: 4px 4px black;
-    font-family: "bowlby one sc";
+    font-family: "gravitas one";
     font-size: 3rem;
     border: black solid;
     /*border-radius: 20px;*/
@@ -142,6 +142,7 @@ body {
     align-items: center;
     visibility: ;
     color: rgb(231, 220, 220);
+    text-shadow: 4px 4px black;
     font-family: "quantico";
     visibility: ;
 }
@@ -170,6 +171,7 @@ button {
 .questionFormat {
     color: rgba(226, 223, 31, 0.966);
     font-size: 2.1rem;
+    text-shadow: 4px 4px black;
 }
 
 

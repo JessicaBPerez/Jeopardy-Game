@@ -1,4 +1,27 @@
 $(document).ready(function() {
+
+    var playerOneName = prompt("Enter Player One's Name");
+    if (playerOneName != null) {
+        document.getElementById("player1Name").innerHTML =
+            playerOneName
+    }
+
+
+    var playerTwoName = prompt("Enter Player Two's Name");
+    if (playerTwoName != null) {
+        document.getElementById("player2Name").innerHTML =
+            playerTwoName
+    }
+
+
+
+
+
+
+
+
+
+
     var scorePlayer1 = 0;
     var scorePlayer2 = 0;
     var playerOneTurn = true;
@@ -38,7 +61,6 @@ $(document).ready(function() {
 
 
 
-
         $(".bb400").on("click", function() {
             $(".bb400").hide();
             $(".bb400backcard").removeClass("hidden");
@@ -48,7 +70,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".bb400backcard").addClass("hidden");
                 //playerOneTurn = !playerOneTurn;
-                if (playerOneTurn == true) {
+                if (playerOneTurn === true) {
                     if ($(this).hasClass("C")) {
                         scorePlayer1 += parseInt(value);
                         $("#player1box .scorePlayer1").text(`${scorePlayer1}`);
@@ -67,7 +89,6 @@ $(document).ready(function() {
                 }
             })
         })
-
 
         $(".bb300").on("click", function() {
             $(".bb300").hide();
@@ -78,7 +99,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".bb300backcard").addClass("hidden");
                 //playerOneTurn = !playerOneTurn;
-                if (playerOneTurn == true) {
+                if (playerOneTurn === true) {
                     if ($(this).hasClass("C")) {
                         scorePlayer1 += parseInt(value);
                         $("#player1box .scorePlayer1").text(`${scorePlayer1}`);
@@ -97,7 +118,6 @@ $(document).ready(function() {
                 }
             })
         })
-
 
 
 
@@ -133,7 +153,6 @@ $(document).ready(function() {
 
 
 
-
         $(".bb100").on("click", function() {
             $(".bb100").hide();
             $(".bb100backcard").removeClass("hidden");
@@ -164,7 +183,6 @@ $(document).ready(function() {
         })
 
 
-
         $(".sw500").on("click", function() {
             $(".sw500").hide();
             $(".sw500backcard").removeClass("hidden");
@@ -193,7 +211,6 @@ $(document).ready(function() {
                 }
             })
         })
-
 
 
 
@@ -228,7 +245,6 @@ $(document).ready(function() {
 
 
 
-
         $(".sw300").on("click", function() {
             $(".sw300").hide();
             $(".sw300backcard").removeClass("hidden");
@@ -257,7 +273,6 @@ $(document).ready(function() {
                 }
             })
         })
-
 
 
 
@@ -297,7 +312,6 @@ $(document).ready(function() {
 
 
 
-
         /* Star Wars 100 Question Card */
         $(".sw100").on("click", function() {
             $(".sw100").hide();
@@ -328,7 +342,6 @@ $(document).ready(function() {
             })
         })
 
-
         /* Science 500 Question Card */
         $(".sci500").on("click", function() {
             $(".sci500").hide();
@@ -358,7 +371,6 @@ $(document).ready(function() {
                 }
             })
         })
-
 
 
 
@@ -398,7 +410,6 @@ $(document).ready(function() {
 
 
 
-
         /* Science 300 Question Card */
         $(".sci300").on("click", function() {
             $(".sci300").hide();
@@ -431,7 +442,6 @@ $(document).ready(function() {
 
 
 
-
         /* Science 200 Question Card */
         $(".sci200").on("click", function() {
             $(".sci200").hide();
@@ -461,7 +471,6 @@ $(document).ready(function() {
                 }
             })
         })
-
 
 
 
@@ -500,7 +509,6 @@ $(document).ready(function() {
 
 
 
-
         /* World Origins 500 Question Card */
         $(".wo500").on("click", function() {
             $(".wo500").hide();
@@ -530,7 +538,6 @@ $(document).ready(function() {
                 }
             })
         })
-
 
 
 
@@ -569,7 +576,6 @@ $(document).ready(function() {
 
 
 
-
         /* World Origins 300 Question Card */
         $(".wo300").on("click", function() {
             $(".wo300").hide();
@@ -599,7 +605,6 @@ $(document).ready(function() {
                 }
             })
         })
-
 
 
 
@@ -636,7 +641,6 @@ $(document).ready(function() {
 
 
 
-
         /* World Origins 100 Question Card */
         $(".wo100").on("click", function() {
             $(".wo100").hide();
@@ -666,7 +670,6 @@ $(document).ready(function() {
                 }
             })
         })
-
 
 
 
@@ -700,7 +703,6 @@ $(document).ready(function() {
             })
         })
 
-
         /* World Leaders 400 Question Card */
         $(".wl400").on("click", function() {
             $(".wl400").hide();
@@ -730,7 +732,6 @@ $(document).ready(function() {
                 }
             })
         })
-
 
 
 
@@ -766,7 +767,6 @@ $(document).ready(function() {
 
 
 
-
         /* World Leaders 200 Question Card */
         $(".wl200").on("click", function() {
             $(".wl200").hide();
@@ -796,7 +796,6 @@ $(document).ready(function() {
                 }
             })
         })
-
 
 
         /* World Leaders 100 Question Card */
@@ -831,7 +830,6 @@ $(document).ready(function() {
 
 
 
-
         /* Code 500 Question Card */
         $(".code500").on("click", function() {
             $(".code500").hide();
@@ -861,7 +859,6 @@ $(document).ready(function() {
                 }
             })
         })
-
 
 
 
@@ -898,7 +895,6 @@ $(document).ready(function() {
 
 
 
-
         /* Code 300 Question Card */
         $(".code300").on("click", function() {
             $(".code300").hide();
@@ -928,7 +924,6 @@ $(document).ready(function() {
                 }
             })
         })
-
 
 
 
@@ -965,7 +960,6 @@ $(document).ready(function() {
 
 
 
-
         /* Code 100 Question Card */
         $(".code100").on("click", function() {
             $(".code100").hide();
@@ -995,7 +989,6 @@ $(document).ready(function() {
                 }
             })
         })
-
 
 
 
