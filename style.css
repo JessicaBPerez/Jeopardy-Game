@@ -520,6 +520,19 @@ button {
 }
 
 
+/*  WINNER CARD FOR WINNER  */
+
+.win {
+    background-color: gold;
+}
+
+.winner {
+    color: white;
+    font-family: "limelight";
+    font-size: 5rem;
+}
+
+
 /*  Master For the PLAYER 1 AND PLAYER 2 Pop-Up Questions  */
 
 
