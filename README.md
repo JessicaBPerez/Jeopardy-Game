@@ -23,3 +23,11 @@ The goal of this project was to utilize our skills in HTML, CSS, Javascript, and
 
 ## Wireframe
 <img src = "Jeopardy_Layout.jpg" alt="Jeopardy Wireframe"/>
+
+## Technologies Used
+* Languages:
+1. HTML
+2. CSS
+3. JavaScript
+* Libraries:
+1. jQuery
