@@ -10,5 +10,4 @@ General Assembly WDI 20 - Project 1
 
 The goal of this project was to utilize our skills in HTML, CSS, Javascript, and any related frameworks or libraries to build and style a web application using DOM manipulation.
 
-![Finished Screenshot of Jessica's Jeopardy]
-<img src = "Main_Jeopardy_Picture.png" alt="Jessica's Jeopardy Main Picture" height=250 width=200/>
+<img src = "Main_Jeopardy_Picture.png" alt="Jessica's Jeopardy Main Picture"/>
