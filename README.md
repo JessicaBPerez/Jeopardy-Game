@@ -26,8 +26,8 @@ The goal of this project was to utilize our skills in HTML, CSS, Javascript, and
 
 ## Technologies Used
 * Languages:
-1. HTML
-2. CSS
-3. JavaScript
+>> 1. HTML
+>> 2. CSS
+>> 3. JavaScript
 * Libraries:
-1. jQuery
+>> 1. jQuery
