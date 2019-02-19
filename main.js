@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    /*  Players Input Their Names Before Game Starts  */
+    /*  Players Input Their Names Before The Game Starts  */
     var playerOneName = prompt("Enter Player One's Name");
     if (playerOneName != null) {
         document.getElementById("player1Name").innerHTML =
@@ -18,11 +18,12 @@ $(document).ready(function() {
     var jeopardyMusic = document.getElementById("jeopardyMusic")
 
 
-
-
-
-
-
+    var classArray = [".bb500", ".bb400", ".bb300", ".bb200", ".bb100", ".sw500", ".sw400", ".sw300",
+        "sw200", ".sw100", ".sci500", ".sci400", ".sci300", ".sci200", ".sci100",
+        ".wo500", ".wo400", ".wo300", ".wo200", ".wo100", ".wl500", ".wl400", ".wl300",
+        ".wl200", ".wl100", ".code500", ".code400", ".code300", ".code200", ".code100"
+    ]
+    console.log(classArray);
     var scorePlayer1 = 0;
     var scorePlayer2 = 0;
     var playerOneTurn = true;
@@ -31,7 +32,6 @@ $(document).ready(function() {
         $(".bb500").on("click", function() {
             $(".bb500").hide();
             $(".bb500backcard").removeClass("hidden");
-            //I added music below works?
             $("#jeopardyMusic")[0].play();
             let value = $(".bb500").text();
 
@@ -48,7 +48,7 @@ $(document).ready(function() {
                         scorePlayer1 -= parseInt(value);
                         $("#player1box .scorePlayer1").text(`${scorePlayer1}`);
                     }
-                } else {
+                } else if (playerOneTurn == false) {
                     if ($(this).hasClass("A")) {
                         scorePlayer2 += parseInt(value);
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
@@ -57,6 +57,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -75,7 +76,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".bb400backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                //playerOneTurn = !playerOneTurn;
+
                 if (playerOneTurn === true) {
                     if ($(this).hasClass("C")) {
                         scorePlayer1 += parseInt(value);
@@ -93,6 +94,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -124,6 +126,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -157,6 +160,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -191,6 +195,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -205,7 +210,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".sw500backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("D")) {
                         scorePlayer1 += parseInt(value);
@@ -223,6 +228,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -238,7 +244,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".sw400backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("A")) {
                         scorePlayer1 += parseInt(value);
@@ -256,6 +262,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -271,7 +278,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".sw300backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("D")) {
                         scorePlayer1 += parseInt(value);
@@ -289,6 +296,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -306,7 +314,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".sw200backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("B")) {
                         scorePlayer1 += parseInt(value);
@@ -324,6 +332,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -343,7 +352,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".sw100backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("B")) {
                         scorePlayer1 += parseInt(value);
@@ -361,6 +370,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -375,7 +385,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".sci500backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("C")) {
                         scorePlayer1 += parseInt(value);
@@ -393,6 +403,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -412,7 +423,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".sci400backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("D")) {
                         scorePlayer1 += parseInt(value);
@@ -430,6 +441,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -447,7 +459,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".sci300backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("A")) {
                         scorePlayer1 += parseInt(value);
@@ -465,6 +477,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -481,7 +494,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".sci200backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("A")) {
                         scorePlayer1 += parseInt(value);
@@ -499,6 +512,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -517,7 +531,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".sci100backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("C")) {
                         scorePlayer1 += parseInt(value);
@@ -535,6 +549,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -552,7 +567,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".wo500backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("B")) {
                         scorePlayer1 += parseInt(value);
@@ -570,6 +585,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -588,7 +604,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".wo400backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("B")) {
                         scorePlayer1 += parseInt(value);
@@ -606,6 +622,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -623,7 +640,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".wo300backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("C")) {
                         scorePlayer1 += parseInt(value);
@@ -641,6 +658,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -657,7 +675,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".wo200backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("A")) {
                         scorePlayer1 += parseInt(value);
@@ -675,6 +693,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -692,7 +711,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".wo100backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("A")) {
                         scorePlayer1 += parseInt(value);
@@ -710,6 +729,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -726,7 +746,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".wl500backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("A")) {
                         scorePlayer1 += parseInt(value);
@@ -744,6 +764,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -758,7 +779,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".wl400backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("C")) {
                         scorePlayer1 += parseInt(value);
@@ -776,6 +797,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -792,7 +814,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".wl300backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("C")) {
                         scorePlayer1 += parseInt(value);
@@ -810,6 +832,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -826,7 +849,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".wl200backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("B")) {
                         scorePlayer1 += parseInt(value);
@@ -844,6 +867,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -859,7 +883,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".wl100backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("B")) {
                         scorePlayer1 += parseInt(value);
@@ -877,6 +901,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -893,7 +918,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".code500backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("D")) {
                         scorePlayer1 += parseInt(value);
@@ -911,6 +936,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -927,7 +953,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".code400backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("D")) {
                         scorePlayer1 += parseInt(value);
@@ -945,6 +971,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -962,7 +989,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".code300backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("C")) {
                         scorePlayer1 += parseInt(value);
@@ -980,6 +1007,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -996,7 +1024,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".code200backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                //playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("A")) {
                         scorePlayer1 += parseInt(value);
@@ -1014,6 +1042,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
@@ -1031,7 +1060,7 @@ $(document).ready(function() {
             $("button").on("click", function() {
                 $(".code100backcard").addClass("hidden");
                 $("#jeopardyMusic")[0].load();
-                playerOneTurn = !playerOneTurn;
+                // playerOneTurn = !playerOneTurn;
                 if (playerOneTurn == true) {
                     if ($(this).hasClass("A")) {
                         scorePlayer1 += parseInt(value);
@@ -1049,6 +1078,7 @@ $(document).ready(function() {
                         $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                     }
                 }
+                playerOneTurn = !playerOneTurn;
             })
         })
 
