@@ -33,3 +33,9 @@ The goal of this project was to utilize our skills in HTML, CSS, Javascript, and
 2. Libraries:
 - jQuery
 
+## Future Developments/Improvements for Version 2
+* Add intro animation with a "How To Play" slider card
+* Add a ten second timer to each question
+* Allow players to consequtively answer questions with a button buzzard
+* Allow players to steal a turn
+* Add a selection of Avatars for the players
