@@ -4,7 +4,7 @@
 }
 
 
-/*  Jeopardy Music  */
+/*  Jeopardy Music and Applause  */
 
 audio {
     display: none;
@@ -137,8 +137,6 @@ body {
     font-family: "gravitas one";
     font-size: 2.2rem;
     border: black solid;
-    /*border-radius: 20px;
-    background: radial-gradient(rgb(35, 35, 190) 50%, rgb(180, 26, 167));*/
 }
 
 
@@ -528,7 +526,6 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    visibility: hidden;
 }
 
 .winner {

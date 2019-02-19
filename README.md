@@ -2,7 +2,7 @@
 
 General Assembly WDI 20 - Project 1
 
-- Project:
+- Project: https://jovial-thompson-74abac.netlify.com/
 - Trello Board: https://trello.com/b/wVet25tN/jeopardy-game
 - Git Hub: https://github.com/JessicaBPerez/Jeopardy-Game.git
 

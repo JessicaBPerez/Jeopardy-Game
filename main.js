@@ -17,50 +17,20 @@ $(document).ready(function() {
     //Audio For Jeopardy
     var jeopardyMusic = document.getElementById("jeopardyMusic")
 
-    //Array for Cards On Game Board
-    var gameCardFull = [".bb500", ".bb400", ".bb300", ".bb200", ".bb100", ".sw500", ".sw400", ".sw300",
-        "sw200", ".sw100", ".sci500", ".sci400", ".sci300", ".sci200", ".sci100",
-        ".wo500", ".wo400", ".wo300", ".wo200", ".wo100", ".wl500", ".wl400", ".wl300",
-        ".wl200", ".wl100", ".code500", ".code400", ".code300", ".code200", ".code100"
-    ];
-
-    var gameCardEmpty = [];
-
-
-    //Function for looping through the gameboard and removing chosen cards
-    for (var i = 0; i < gameCardFull.length; i++) {
-        if (gameCardFull[i].name === name) {
-            gameCardEmpty.push(gameCardFull[i]);
-        }
-    }
-    //Ask if there is any way to move the corresponding item in an array into the
-    //new gameCardEmpty array so that the board is empty at the end
-    //then calculate winner
-
-
-
-
-
-
-
-
+    // Scores for Player One and Player Two
     var scorePlayer1 = 0;
     var scorePlayer2 = 0;
     var playerOneTurn = true;
 
-
+    //Click Events for Each Card
     $(".bb500").on("click", function() {
         $(".bb500").hide();
         $(".bb500backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
-
         let value = $(".bb500").text();
-
-        //Might need to move value.bb500 into global scale inside only #wholeGame function.
         $(".bb500backcard button").on("click", function() {
             $(".bb500backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn === true) {
                 if ($(this).hasClass("A")) {
                     scorePlayer1 += parseInt(value);
@@ -83,15 +53,9 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
-            console.log(playerOneTurn)
-            console.log('plaer1', scorePlayer1)
-            console.log('plaer2', scorePlayer2)
+            checkWinner()
         })
     })
-
-
-
-
 
 
     $(".bb400").on("click", function() {
@@ -99,16 +63,12 @@ $(document).ready(function() {
         $(".bb400backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".bb400").text();
-
-        //Might need to move value.bb400 into global scale inside only #wholeGame function.
         $(".bb400backcard button").on("click", function() {
             $(".bb400backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-
             if (playerOneTurn === true) {
                 if ($(this).hasClass("C")) {
                     scorePlayer1 += parseInt(value);
-                    console.log(value)
                     $("#player1box .scorePlayer1").text(`${scorePlayer1}`);
                 } else {
                     scorePlayer1 -= parseInt(value);
@@ -124,6 +84,7 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
 
@@ -132,12 +93,9 @@ $(document).ready(function() {
         $(".bb300backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".bb300").text();
-
-        //Might need to move value.bb400 into global scale inside only #wholeGame function.
         $(".bb300backcard button").on("click", function() {
             $(".bb300backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn === true) {
                 if ($(this).hasClass("C")) {
                     scorePlayer1 += parseInt(value);
@@ -156,6 +114,7 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
 
@@ -166,12 +125,9 @@ $(document).ready(function() {
         $(".bb200backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".bb200").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".bb200backcard button").on("click", function() {
             $(".bb200backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("B")) {
                     scorePlayer1 += parseInt(value);
@@ -190,6 +146,7 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
 
@@ -201,12 +158,9 @@ $(document).ready(function() {
         $(".bb100backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".bb100").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".bb100backcard button").on("click", function() {
             $(".bb100backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("B")) {
                     scorePlayer1 += parseInt(value);
@@ -225,6 +179,7 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
 
@@ -234,12 +189,9 @@ $(document).ready(function() {
         $(".sw500backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".sw500").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".sw500backcard button").on("click", function() {
             $(".sw500backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("D")) {
                     scorePlayer1 += parseInt(value);
@@ -258,9 +210,9 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
-
 
 
     $(".sw400").on("click", function() {
@@ -268,12 +220,9 @@ $(document).ready(function() {
         $(".sw400backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".sw400").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".sw400backcard button").on("click", function() {
             $(".sw400backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("A")) {
                     scorePlayer1 += parseInt(value);
@@ -292,6 +241,7 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
 
@@ -302,12 +252,9 @@ $(document).ready(function() {
         $(".sw300backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".sw300").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".sw300backcard button").on("click", function() {
             $(".sw300backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("D")) {
                     scorePlayer1 += parseInt(value);
@@ -326,24 +273,18 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
-
-
-
-
 
     $(".sw200").on("click", function() {
         $(".sw200").hide();
         $(".sw200backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".sw200").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".sw200backcard button").on("click", function() {
             $(".sw200backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("B")) {
                     scorePlayer1 += parseInt(value);
@@ -362,13 +303,9 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
-
-
-
-
-
 
     /* Star Wars 100 Question Card */
     $(".sw100").on("click", function() {
@@ -376,12 +313,9 @@ $(document).ready(function() {
         $(".sw100backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".sw100").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".sw100backcard button").on("click", function() {
             $(".sw100backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("B")) {
                     scorePlayer1 += parseInt(value);
@@ -400,6 +334,7 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
 
@@ -409,12 +344,9 @@ $(document).ready(function() {
         $(".sci500backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".sci500").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".sci500backcard button").on("click", function() {
             $(".sci500backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("C")) {
                     scorePlayer1 += parseInt(value);
@@ -433,13 +365,9 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
-
-
-
-
-
 
     /* Science 400 Question Card */
     $(".sci400").on("click", function() {
@@ -447,12 +375,9 @@ $(document).ready(function() {
         $(".sci400backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".sci400").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".sci400backcard button").on("click", function() {
             $(".sci400backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("D")) {
                     scorePlayer1 += parseInt(value);
@@ -471,11 +396,9 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
-
-
-
 
     /* Science 300 Question Card */
     $(".sci300").on("click", function() {
@@ -483,12 +406,9 @@ $(document).ready(function() {
         $(".sci300backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".sci300").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".sci300backcard button").on("click", function() {
             $(".sci300backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("A")) {
                     scorePlayer1 += parseInt(value);
@@ -507,10 +427,9 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
-
-
 
     /* Science 200 Question Card */
     $(".sci200").on("click", function() {
@@ -518,12 +437,9 @@ $(document).ready(function() {
         $(".sci200backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".sci200").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".sci200backcard button").on("click", function() {
             $(".sci200backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("A")) {
                     scorePlayer1 += parseInt(value);
@@ -542,12 +458,9 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
-
-
-
-
 
     /* Science 100 Question Card */
     $(".sci100").on("click", function() {
@@ -555,12 +468,9 @@ $(document).ready(function() {
         $(".sci100backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".sci100").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".sci100backcard button").on("click", function() {
             $(".sci100backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("C")) {
                     scorePlayer1 += parseInt(value);
@@ -579,11 +489,9 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
-
-
-
 
     /* World Origins 500 Question Card */
     $(".wo500").on("click", function() {
@@ -591,12 +499,9 @@ $(document).ready(function() {
         $(".wo500backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".wo500").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".wo500backcard button").on("click", function() {
             $(".wo500backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("B")) {
                     scorePlayer1 += parseInt(value);
@@ -615,12 +520,9 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
-
-
-
-
 
     /* World Origins 400 Question Card */
     $(".wo400").on("click", function() {
@@ -628,12 +530,9 @@ $(document).ready(function() {
         $(".wo400backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".wo400").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".wo400backcard button").on("click", function() {
             $(".wo400backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("B")) {
                     scorePlayer1 += parseInt(value);
@@ -652,11 +551,9 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
-
-
-
 
     /* World Origins 300 Question Card */
     $(".wo300").on("click", function() {
@@ -664,12 +561,9 @@ $(document).ready(function() {
         $(".wo300backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".wo300").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".wo300backcard button").on("click", function() {
             $(".wo300backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("C")) {
                     scorePlayer1 += parseInt(value);
@@ -688,10 +582,9 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
-
-
 
     /* World Origins 200 Question Card */
     $(".wo200").on("click", function() {
@@ -699,12 +592,9 @@ $(document).ready(function() {
         $(".wo200backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".wo200").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".wo200backcard button").on("click", function() {
             $(".wo200backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("A")) {
                     scorePlayer1 += parseInt(value);
@@ -723,11 +613,9 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
-
-
-
 
     /* World Origins 100 Question Card */
     $(".wo100").on("click", function() {
@@ -735,12 +623,9 @@ $(document).ready(function() {
         $(".wo100backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".wo100").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".wo100backcard button").on("click", function() {
             $(".wo100backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("A")) {
                     scorePlayer1 += parseInt(value);
@@ -759,10 +644,9 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
-
-
 
     /* World Leaders 500 Question Card */
     $(".wl500").on("click", function() {
@@ -770,12 +654,9 @@ $(document).ready(function() {
         $(".wl500backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".wl500").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".wl500backcard button").on("click", function() {
             $(".wl500backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("A")) {
                     scorePlayer1 += parseInt(value);
@@ -794,6 +675,7 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
 
@@ -803,12 +685,9 @@ $(document).ready(function() {
         $(".wl400backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".wl400").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".wl400backcard button").on("click", function() {
             $(".wl400backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("C")) {
                     scorePlayer1 += parseInt(value);
@@ -827,10 +706,9 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
-
-
 
     /* World Leaders 300 Question Card */
     $(".wl300").on("click", function() {
@@ -838,12 +716,9 @@ $(document).ready(function() {
         $(".wl300backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".wl300").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".wl300backcard button").on("click", function() {
             $(".wl300backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("C")) {
                     scorePlayer1 += parseInt(value);
@@ -862,10 +737,9 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
-
-
 
     /* World Leaders 200 Question Card */
     $(".wl200").on("click", function() {
@@ -873,12 +747,9 @@ $(document).ready(function() {
         $(".wl200backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".wl200").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".wl200backcard button").on("click", function() {
             $(".wl200backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("B")) {
                     scorePlayer1 += parseInt(value);
@@ -897,9 +768,9 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
-
 
     /* World Leaders 100 Question Card */
     $(".wl100").on("click", function() {
@@ -907,12 +778,9 @@ $(document).ready(function() {
         $(".wl100backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".wl100").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".wl100backcard button").on("click", function() {
             $(".wl100backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("B")) {
                     scorePlayer1 += parseInt(value);
@@ -931,10 +799,9 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
-
-
 
     /* Code 500 Question Card */
     $(".code500").on("click", function() {
@@ -942,12 +809,9 @@ $(document).ready(function() {
         $(".code500backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".code500").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".code500backcard button").on("click", function() {
             $(".code500backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("D")) {
                     scorePlayer1 += parseInt(value);
@@ -966,10 +830,9 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
-
-
 
     /* Code 400 Question Card */
     $(".code400").on("click", function() {
@@ -977,12 +840,9 @@ $(document).ready(function() {
         $(".code400backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".code400").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".code400backcard button").on("click", function() {
             $(".code400backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("D")) {
                     scorePlayer1 += parseInt(value);
@@ -1001,11 +861,9 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
-
-
-
 
     /* Code 300 Question Card */
     $(".code300").on("click", function() {
@@ -1013,12 +871,9 @@ $(document).ready(function() {
         $(".code300backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".code300").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".code300backcard button").on("click", function() {
             $(".code300backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("C")) {
                     scorePlayer1 += parseInt(value);
@@ -1037,10 +892,9 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
-
-
 
     /* Code 200 Question Card */
     $(".code200").on("click", function() {
@@ -1048,12 +902,9 @@ $(document).ready(function() {
         $(".code200backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".code200").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".code200backcard button").on("click", function() {
             $(".code200backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            //playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("A")) {
                     scorePlayer1 += parseInt(value);
@@ -1072,11 +923,9 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
-
-
-
 
     /* Code 100 Question Card */
     $(".code100").on("click", function() {
@@ -1084,12 +933,9 @@ $(document).ready(function() {
         $(".code100backcard").removeClass("hidden");
         $("#jeopardyMusic")[0].play();
         let value = $(".code100").text();
-
-        //Might need to move value.bb200 into global scale inside only #wholeGame function.
         $(".code100backcard button").on("click", function() {
             $(".code100backcard").addClass("hidden");
             $("#jeopardyMusic")[0].load();
-            // playerOneTurn = !playerOneTurn;
             if (playerOneTurn == true) {
                 if ($(this).hasClass("A")) {
                     scorePlayer1 += parseInt(value);
@@ -1108,10 +954,23 @@ $(document).ready(function() {
                 }
             }
             playerOneTurn = !playerOneTurn;
+            checkWinner()
         })
     })
 
 
+    //Cutoff Score for Winner = 1000
 
-
+    // Determines the Winner
+    checkWinner = () => {
+        if (scorePlayer1 >= 1000) {
+            $('.win').removeClass('hidden');
+            $(".win p").text(`${playerOneName}! you are the Jeopardy Champion!`)
+            $("#applauseMusic")[0].play();
+        } else if (scorePlayer2 >= 1000) {
+            $('.win').removeClass('hidden');
+            $(".win p").text(`${playerTwoName}! you are the Jeopardy Champion!`)
+            $("#applauseMusic")[0].play();
+        }
+    }
 })
