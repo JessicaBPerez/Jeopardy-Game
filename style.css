@@ -524,12 +524,32 @@ button {
 
 .win {
     background-color: gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
 }
 
 .winner {
     color: white;
     font-family: "limelight";
     font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.win p {
+    font-size: 4rem;
+    font-family: "staatliches";
+    color: rgb(25, 25, 131);
+    text-shadow: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 
