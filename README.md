@@ -28,6 +28,7 @@ The goal of this project was to utilize our skills in HTML, CSS, Javascript, and
 Languages:
 1. HTML
 2. CSS
-3. JavaScript\
+3. JavaScript
+---
 Libraries:
 1. jQuery
