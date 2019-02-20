@@ -35,9 +35,6 @@ $(document).ready(function() {
                 if ($(this).hasClass("A")) {
                     scorePlayer1 += parseInt(value);
                     $("#player1box .scorePlayer1").text(`${scorePlayer1}`);
-                    console.log('plaer1', scorePlayer1)
-                    console.log('plaer2', scorePlayer2)
-                    console.log(value)
                 } else {
                     scorePlayer1 -= parseInt(value);
                     $("#player1box .scorePlayer1").text(`${scorePlayer1}`);
@@ -45,7 +42,6 @@ $(document).ready(function() {
             } else if (playerOneTurn === false) {
                 if ($(this).hasClass("A")) {
                     scorePlayer2 += parseInt(value);
-                    console.log(value)
                     $("#player2box .scorePlayer2").text(`${scorePlayer2}`);
                 } else {
                     scorePlayer2 -= parseInt(value);
